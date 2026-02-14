@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Listening Buddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>AI Listening Buddy 🌿</h1>
+        <p class="subtitle">A safe, non-judgmental space to express your emotions.</p>
+
+        <div class="chat-box">
+            <p class="bot-message">
+                Hi there 💚 I’m here to listen. What’s on your mind today?
+            </p>
+
+            <div class="typing">
+                 <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <h2 class="form-heading">Share What’s On Your Mind 💬</h2>
+<p class="form-subtext">Your thoughts are safe here.</p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoDptsmjMWrd7oayMVa2vcpTAD59R7qBEUzXKQXGm498PErw/viewform"
+   target="_blank"
+   rel="noopener noreferrer">
+</a>
+    
+    <div class="chat-container">
+    <textarea id="userInput" placeholder="Type how you're feeling..." required></textarea>
+    <button onclick="redirectUser()">Share with Buddy</button>
+</div>
+
+        <p class="disclaimer">
+            This is not medical advice. It is a supportive AI companion.
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+function redirectUser() {
+    let input = document.getElementById("userInput").value.toLowerCase();
+
+    if (input.includes("stress") || input.includes("exam")) {
+        window.location.href = "stress.html";
+    }
+    else if (input.includes("lonely") || input.includes("alone")) {
+        window.location.href = "lonely.html";
+    }
+    else if (input.includes("not confident")) {
+        window.location.href = "not_confident.html";
+    }
+    else if (input.includes("overwhelmed")) {
+        window.location.href = "overwhelmed.html";
+    }
+    else if (input.includes("bad day")) {
+        window.location.href = "bad_day.html";
+    }
+     else {
+        // Default fallback → Google Form
+        window.open(
+            "https://docs.google.com/forms/d/e/1FAIpQLSdoDptsmjMWrd7oayMVa2vcpTAD59R7qBEUzXKQXGm498PErw/viewform",
+            "_blank"
+        );
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    color: #333;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Chat Area */
+.chat-area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* User Message */
+.user-message {
+    align-self: flex-end;
+    background: #4a6cf7;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 20px 20px 5px 20px;
+    max-width: 75%;
+    font-size: 14px;
+    line-height: 1.4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Bot Message */
+.bot-message {
+    align-self: flex-start;
+    background: white;
+    padding: 15px 18px;
+    border-radius: 20px 20px 20px 5px;
+    max-width: 85%;
+    font-size: 14px;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    white-space: pre-line;
+}
+
+/* Insight Card */
+.insight-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.insight-card h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.insight-card p {
+    font-size: 13px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: #4a6cf7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #2f54d6;
+    transform: scale(1.05);
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

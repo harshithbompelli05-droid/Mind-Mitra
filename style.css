@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Glass Card */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 8px;
+    font-size: 26px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+/* Chat Box */
+.chat-box {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bot-message {
+    font-size: 14px;
+}
+
+/* Form Heading */
+.form-heading {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-subtext {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+/* Input Container */
+.chat-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 15px;
+    border: none;
+    padding: 12px;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: white;
+    color: #4a6cf7;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #4a6cf7;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Disclaimer */
+.disclaimer {
+    font-size: 11px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+/* Typing Animation */
+.typing {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.typing span {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.typing span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.typing span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+.typing span:nth-child(3) {
+    animation-delay: 0s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
